@@ -1,0 +1,259 @@
+:root {
+  --primaryColor: #ff274b;
+  --secondaryColor: #f7bcf7;
+  --lightColor: #ffffff;
+  --bgColor-1: #171a1c;
+  --bgColor-2: #22282a;
+  --padding: 8%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+}
+section {
+  animation: slideDown 1s ease-in-out;
+}
+html {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  color: var(--lightColor);
+}
+h1 {
+  font-size: 3.2rem;
+  letter-spacing: 0.2px;
+  margin: 12px 0;
+}
+h2 {
+  font-size: 1.2rem;
+  letter-spacing: 1.1px;
+  cursor: pointer;
+}
+h5 {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0 0 18px 0;
+}
+p {
+  color: var(--secondaryColor);
+  font-weight: 400;
+}
+.Home {
+  width: 100%;
+  height: 100vh;
+  background: 2rem var(--bgColor-1);
+  display: flex;
+  flex-direction: column;
+}
+span {
+  color: var(--primaryColor);
+}
+
+nav {
+  padding-top: 2.2rem;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0.8rem 1.5rem;
+  list-style: none;
+}
+nav ul li a {
+  color: var(--lightColor);
+  transition: 0.4s;
+}
+nav ul li a:hover {
+  color: var(--primaryColor);
+}
+.btn {
+  padding: 8px 16px;
+  background: var(--primaryColor);
+  color: var(--lightColor);
+  border-radius: 16px;
+  border: 2px solid transparent;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.btn:hover {
+  background: transparent;
+  border: 2px solid var(--primaryColor);
+}
+.Home .container {
+  display: flex;
+  flex-grow: 1;
+  align-items: start;
+  justify-content: space-between;
+  padding: 0 var(--padding);
+}
+.Home .content {
+  align-self: center;
+  position: relative;
+  bottom: 8%;
+}
+
+.Home .social img {
+  margin-top: 52px;
+  margin-right: 12px;
+  height: 42px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.social img:hover {
+  scale: 1.2;
+  filter: drop-shadow(0 0 2px var(--lightColor));
+}
+.Home .pic {
+  width: 45%;
+  height: 90%;
+  display: flex;
+  position: relative;
+  align-self: flex-end;
+}
+.Home .pic img {
+  position: absolute;
+  height: 80%;
+  left: 50%;
+  bottom: 20%;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+.Home .pic:hover .shape {
+  bottom: 25%;
+}
+.Home .pic:hover .person {
+  left: 45%;
+}
+/* secation about */
+.about {
+  width: 100%;
+  padding: 2rem var(--padding);
+  background: var(--bgColor-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about .pic {
+  width: 35%;
+}
+.about .pic img {
+  width: 90%;
+}
+.about .content {
+  width: 45%;
+}
+/* sectaion OurServices */
+.Services {
+  padding: 2rem var(--padding);
+
+  background: var(--bgColor-1);
+}
+.Services .contaner {
+  display: flex;
+  justify-content: space-between;
+}
+.text_center {
+  text-align: center;
+}
+.Services .contaner .card_mobile {
+  background: var(--bgColor-2);
+  width: 22%;
+  padding: 1.3rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.4s;
+}
+.Services .contaner .card_mobile:hover {
+  box-shadow: 0 0 10px var(--primaryColor);
+  padding: 2rem 2rem;
+}
+/*  */
+.Services .card_mobile em {
+  font-size: 3.12rem;
+  color: var(--primaryColor);
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 1.3rem;
+}
+/* secation skolls */
+.skills {
+  width: 100%;
+  padding: 2rem var(--padding);
+  background: var(--bgColor-2);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.skills .pic {
+  width: 35%;
+}
+.skills .pic img {
+  width: 90%;
+}
+.skills .content {
+  width: 45%;
+  display: grid;
+  flex-wrap: wrap;
+}
+.skills .sircle img {
+  align-self: center;
+  width: 72%;
+}
+.skills .content .container_img {
+  padding-top: var(--padding);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.skills .content .container_img .sircle {
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--lightColor);
+  box-shadow: 0 0 4px var(--lightColor);
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.skills .content .container_img .sircle:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 4px var(--primaryColor);
+}
+
+/* sectaion Contact */
+.Contact {
+  background: var(--bgColor-1);
+  padding: 1.3rem 0;
+}
+.Contact h1 {
+  text-align: center;
+}
+.Contact p {
+  color: var(--lightColor);
+  text-align: center;
+  padding: 12px;
+  line-height: 20.8px;
+}
+.Contact i {
+  color: var(--primaryColor);
+  text-align: center;
+  display: block;
+}
+/* end */
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
