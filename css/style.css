@@ -6,6 +6,9 @@
   --bgColor-2: #22282a;
   --padding: 8%;
 }
+body {
+  background: var(--bgColor-1);
+}
 * {
   padding: 0;
   margin: 0;
@@ -104,9 +107,13 @@ nav ul li a:hover {
   cursor: pointer;
   transition: 0.4s;
 }
+
 .social img:hover {
   scale: 1.2;
   filter: drop-shadow(0 0 2px var(--lightColor));
+}
+.Home .social a {
+  text-decoration: none;
 }
 .Home .pic {
   width: 45%;
@@ -251,9 +258,80 @@ nav ul li a:hover {
 
 @keyframes slideDown {
   from {
-    transform: translateY(-100%);
+    transform: translateY(-100vh);
   }
   to {
-    transform: translateY(0%);
+    transform: translateY(-0vh);
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 575px) {
+  :root {
+    --padding: 4%;
+  }
+  html {
+    font-size: 12px;
+  }
+  .Home .pic {
+    display: none;
+  }
+  .Home .content {
+    width: 100%;
+  }
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 1.8rem 3.2%;
+    display: flex;
+  }
+  nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  nav .btn {
+    align-self: stretch;
+    display: none;
+  }
+  .Home .container {
+    padding: 0 10%;
+  }
+  .Home .social a {
+    height: 100%;
+    width: 100%;
+  }
+  .about .pic {
+    display: none;
+  }
+  .about .content {
+    width: 100%;
+    text-align: center;
+  }
+  .Services .contaner .card_mobile {
+    width: 58%;
+  }
+  .Services .contaner {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+  .skills .pic {
+    display: none;
+  }
+  .skills .content .container_img {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+  .skills .content {
+    width: 100%;
+text-align: center;
   }
 }
