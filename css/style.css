@@ -329,9 +329,83 @@ nav ul li a:hover {
     align-items: center;
     flex-wrap: wrap;
     gap: 32px;
-}
+  }
   .skills .content {
     width: 100%;
-text-align: center;
+    text-align: center;
+  }
+}
+
+/* mobile width */
+@media screen and (min-width: 576px) and (max-width: 915px) {
+  :root {
+    --padding: 4%;
+  }
+  html {
+    font-size: 12px;
+  }
+  .Home .social img {
+    margin-top: 2.3rem;
+  }
+  .Home .pic {
+    display: none;
+  }
+  .Home .content {
+    width: 100%;
+  }
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 1.8rem 3.2%;
+    display: flex;
+  }
+  nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  nav .btn {
+    align-self: stretch;
+    display: none;
+  }
+  .Home .container {
+    padding: var(--padding) 10%;
+  }
+  .Home .social a {
+    height: 100%;
+    width: 100%;
+  }
+  /* .about .pic {
+    display: none;
+  } */
+  .about .content {
+    width: 100%;
+    text-align: start;
+  }
+  .Services .contaner .card_mobile {
+    width: 40%;
+  }
+  .Services .contaner {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+  }
+  .skills .pic {
+    display: none;
+  }
+  .skills .content .container_img {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .skills .content {
+    width: 100%;
+    text-align: center;
   }
 }
