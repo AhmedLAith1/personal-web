@@ -15,6 +15,7 @@ body {
   box-sizing: border-box;
   text-decoration: none;
   border: none;
+  scroll-behavior: smooth;
 }
 section {
   animation: slideDown 1s ease-in-out;
@@ -273,17 +274,16 @@ nav ul li a:hover {
   html {
     font-size: 12px;
   }
-  .Home .pic {
-    display: none;
-  }
-  .Home .content {
-    width: 100%;
-  }
   nav {
+    background: var(--bgColor-1);
+    width: 100vw;
+    position: fixed;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 100;
   }
+
   nav ul li {
     margin: 1.8rem 3.2%;
     display: flex;
@@ -297,6 +297,17 @@ nav ul li a:hover {
     align-self: stretch;
     display: none;
   }
+  .Home {
+    scroll-margin-top: 96px;
+  }
+  .Home .pic {
+    display: none;
+  }
+  .Home .content {
+    width: 100%;
+    top: 10%;
+  }
+
   .Home .container {
     padding: 0 10%;
   }
@@ -304,12 +315,18 @@ nav ul li a:hover {
     height: 100%;
     width: 100%;
   }
+  .about {
+    scroll-margin-top: 96px;
+  }
   .about .pic {
     display: none;
   }
   .about .content {
     width: 100%;
     text-align: center;
+  }
+  .Services {
+    scroll-margin-top: 96px;
   }
   .Services .contaner .card_mobile {
     width: 58%;
@@ -319,6 +336,9 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     gap: 1.2rem;
+  }
+  .skills {
+    scroll-margin-top: 96px;
   }
   .skills .pic {
     display: none;
@@ -344,19 +364,15 @@ nav ul li a:hover {
   html {
     font-size: 12px;
   }
-  .Home .social img {
-    margin-top: 2.3rem;
-  }
-  .Home .pic {
-    display: none;
-  }
-  .Home .content {
-    width: 100%;
-  }
+
   nav {
+    background: var(--bgColor-1);
+    width: 100vw;
+    position: fixed;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 100;
   }
   nav ul li {
     margin: 1.8rem 3.2%;
@@ -371,6 +387,20 @@ nav ul li a:hover {
     align-self: stretch;
     display: none;
   }
+  .Home {
+    scroll-margin-top: 96px;
+  }
+  .Home .social img {
+    margin-top: 2.3rem;
+  }
+  .Home .pic {
+    display: none;
+  }
+  .Home .content {
+    width: 100%;
+    top: 10%;
+  }
+
   .Home .container {
     padding: var(--padding) 10%;
   }
@@ -378,12 +408,18 @@ nav ul li a:hover {
     height: 100%;
     width: 100%;
   }
+  .about {
+    scroll-margin-top: 96px;
+  }
   /* .about .pic {
     display: none;
   } */
   .about .content {
     width: 100%;
     text-align: start;
+  }
+  .Services {
+    scroll-margin-top: 96px;
   }
   .Services .contaner .card_mobile {
     width: 40%;
@@ -393,6 +429,9 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     gap: 1.2rem;
+  }
+  .skills {
+    scroll-margin-top: 96px;
   }
   .skills .pic {
     display: none;
